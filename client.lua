@@ -27,34 +27,34 @@ Citizen.CreateThread(function()
 			if WarMenu.MenuButton('Ammo', 'Ammo') then end
 			WarMenu.Display()
 			elseif WarMenu.IsMenuOpened('Vintovki') then
-			if WarMenu.Button('Varmint 20 $') then
-				TriggerServerEvent('bberry:buyweapon', 20, 'WEAPON_RIFLE_VARMINT')
-				elseif WarMenu.Button('Bolt action rifle 50$') then
-					TriggerServerEvent('bberry:buyweapon', 50, 'WEAPON_RIFLE_BOLTACTION')
+			if WarMenu.Button('Varmint 20 $ [1]') then
+				TriggerServerEvent('bberry:buyweapon', 20, 'WEAPON_RIFLE_VARMINT', 1)
+				elseif WarMenu.Button('Bolt action rifle 50$ [1]') then
+					TriggerServerEvent('bberry:buyweapon', 50, 'WEAPON_RIFLE_BOLTACTION', 1)
 			end
 				WarMenu.Display()
 			elseif WarMenu.IsMenuOpened('Shotgun') then 
-			if WarMenu.Button('Double barrel shotgun 30$') then
-				TriggerServerEvent('bberry:buyweapon', 30, 'WEAPON_SHOTGUN_DOUBLEBARREL')
-				elseif WarMenu.Button('Sawed-off shotgun 30$') then
-				TriggerServerEvent('bberry:buyweapon', 30, 'WEAPON_SHOTGUN_SAWEDOFF')
-				elseif WarMenu.Button('Pump shotgun 50$') then
-				TriggerServerEvent('bberry:buyweapon', 50, 'WEAPON_SHOTGUN_PUMP')
-				elseif WarMenu.Button('Semi-automatic shotgun 60$') then
-				TriggerServerEvent('bberry:buyweapon', 60, 'WEAPON_SHOTGUN_SEMIAUTO')
-				elseif WarMenu.Button('Repeater shotgun 80$') then
-				TriggerServerEvent('bberry:buyweapon', 80, 'WEAPON_SHOTGUN_REPEATING')
+			if WarMenu.Button('Double barrel shotgun 30$ [1]') then
+				TriggerServerEvent('bberry:buyweapon', 30, 'WEAPON_SHOTGUN_DOUBLEBARREL', 1)
+				elseif WarMenu.Button('Sawed-off shotgun 30$ [1]') then
+				TriggerServerEvent('bberry:buyweapon', 30, 'WEAPON_SHOTGUN_SAWEDOFF', 1)
+				elseif WarMenu.Button('Pump shotgun 50$ [1]') then
+				TriggerServerEvent('bberry:buyweapon', 50, 'WEAPON_SHOTGUN_PUMP', 1)
+				elseif WarMenu.Button('Semi-automatic shotgun 60$ [1]') then
+				TriggerServerEvent('bberry:buyweapon', 60, 'WEAPON_SHOTGUN_SEMIAUTO', 1)
+				elseif WarMenu.Button('Repeater shotgun 80$ [1]') then
+				TriggerServerEvent('bberry:buyweapon', 80, 'WEAPON_SHOTGUN_REPEATING', 1)
 			end
 			WarMenu.Display()
 				elseif WarMenu.IsMenuOpened('Other') then
 					if WarMenu.Button('Lasso 10$') then
-						TriggerServerEvent('bberry:buyweapon', 10, 'WEAPON_LASSO')
-						elseif WarMenu.Button('Throwing knifes 20$') then
-						TriggerServerEvent('bberry:buyweapon', 20, 'WEAPON_THROWN_THROWING_KNIVES')
-						elseif WarMenu.Button('Tomahawk 20$') then
-						TriggerServerEvent('bberry:buyweapon', 20, 'WEAPON_THROWN_TOMAHAWK')
-						elseif WarMenu.Button('Dynamite 50$') then
-						TriggerServerEvent('bberry:buyweapon', 50, 'WEAPON_THROWN_DYNAMITE')
+						TriggerServerEvent('bberry:buyweapon', 10, 'WEAPON_LASSO', 1)
+						elseif WarMenu.Button('Throwing knifes 20$ [1]') then
+						TriggerServerEvent('bberry:buyweapon', 20, 'WEAPON_THROWN_THROWING_KNIVES', 1)
+						elseif WarMenu.Button('Tomahawk 20$ [1]') then
+						TriggerServerEvent('bberry:buyweapon', 20, 'WEAPON_THROWN_TOMAHAWK', 1)
+						elseif WarMenu.Button('Dynamite 50$ [1]') then
+						TriggerServerEvent('bberry:buyweapon', 50, 'WEAPON_THROWN_DYNAMITE', 1)
 					end
 						WarMenu.Display()
 						elseif WarMenu.IsMenuOpened('Ammo') then
