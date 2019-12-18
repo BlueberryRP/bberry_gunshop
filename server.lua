@@ -1,13 +1,17 @@
 RegisterServerEvent('bberry:buyweapon')
-AddEventHandler('bberry:buyweapon', function(price, weapon)
+AddEventHandler('bberry:buyweapon', function(price, weapon, level)
 	local _weapon = weapon
+	local _level = level
 	local _source = source
 	TriggerEvent('redemrp:getPlayerFromId', _source, function(user) 
 		local identifier = user.getIdentifier()
+		local ulevel = user.getLevel()
 		local charid = user.getSessionVar("charid")
 		if user.getMoney() >= price then
+			if ulevel >= _level then
 			user.removeMoney(price)
 			TriggerClientEvent('give:weapon', source, weapon)
+			else end
 		else
 			TriggerClientEvent('Message:cancel', source)
 		end
