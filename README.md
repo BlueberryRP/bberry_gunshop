@@ -1,0 +1,2 @@
+# bberry_gunshop
+That's gunshop required RedEM framwork. That's work's fine without problem. If you don't have enough money you can't get weapon. You can add a new weapon in client.cfg. But that works without mysql db, because i can't understand why i can not add more then 2 types of one group weapon. For example if you have 1 shotgun, and 1 varmint weapon, if you will but for example bolt action rifle the you will lost your shotgun and get bolt action rifle for that place in weapon selector. If somebody help me i will fix it work with database.
